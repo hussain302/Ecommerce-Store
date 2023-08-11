@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{D42D2127-B8F6-4CFF-8C54-20DCBE681519}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{D42D2127-B8F6-4CFF-8C54-20DCBE681519}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductServices", "ProductServices\ProductServices.csproj", "{AEED5D2A-8076-481B-8F8D-CC96B92DA502}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{468728B4-C0BE-409E-9CC5-DE9BC105142C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{E52D11A4-0C16-4F5C-82C9-E5D1D2A97ACA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UIProject", "UIProject", "{E52D11A4-0C16-4F5C-82C9-E5D1D2A97ACA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce.WebUI", "Ecommerce.WebUI\Ecommerce.WebUI.csproj", "{82AA798C-682C-4BF1-9607-2433544312E7}"
 EndProject
@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce.Utilities", "Ecommerce.Utilities\Ecommerce.Utilities.csproj", "{DC8AFF12-AEC4-4C5A-9163-113A5781262F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderServices", "OrderServices\OrderServices.csproj", "{A04E53BA-1AAA-4268-86B1-AC3D23116313}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderServices", "OrderServices\OrderServices.csproj", "{A04E53BA-1AAA-4268-86B1-AC3D23116313}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
