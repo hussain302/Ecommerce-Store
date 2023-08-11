@@ -1238,6 +1238,16 @@
             "rid": "win"
           }
         }
+      },
+      "Ecommerce.Utilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Ecommerce.Utilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ecommerce.Utilities.dll": {}
+        }
       }
     }
   },
@@ -3899,10 +3909,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Ecommerce.Utilities/1.0.0": {
+      "type": "project",
+      "path": "../Ecommerce.Utilities/Ecommerce.Utilities.csproj",
+      "msbuildProject": "../Ecommerce.Utilities/Ecommerce.Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Ecommerce.Utilities >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.5",
       "Microsoft.EntityFrameworkCore >= 7.0.10",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.10",
@@ -3944,7 +3960,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Muhammad.Hussain\\Desktop\\Learning\\DotNetMastery\\.NET Microservices\\EcommerseStore Using .NET Microservices\\EcommerceStore\\Ecommerce.Utilities\\Ecommerce.Utilities.csproj": {
+              "projectPath": "C:\\Users\\Muhammad.Hussain\\Desktop\\Learning\\DotNetMastery\\.NET Microservices\\EcommerseStore Using .NET Microservices\\EcommerceStore\\Ecommerce.Utilities\\Ecommerce.Utilities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

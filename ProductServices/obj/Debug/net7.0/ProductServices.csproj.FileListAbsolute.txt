@@ -74,3 +74,5 @@ C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\Ecom
 C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\ProductServices\obj\Debug\net7.0\ProductServices.pdb
 C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\ProductServices\obj\Debug\net7.0\ProductServices.genruntimeconfig.cache
 C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\ProductServices\obj\Debug\net7.0\ref\ProductServices.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\ProductServices\bin\Debug\net7.0\Ecommerce.Utilities.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\ProductServices\bin\Debug\net7.0\Ecommerce.Utilities.pdb

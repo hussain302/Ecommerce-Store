@@ -1,0 +1,12 @@
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Utilities\bin\Debug\net7.0\Ecommerce.Utilities.deps.json
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Utilities\bin\Debug\net7.0\Ecommerce.Utilities.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Utilities\bin\Debug\net7.0\Ecommerce.Utilities.pdb
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Utilities\obj\Debug\net7.0\Ecommerce.Utilities.csproj.AssemblyReference.cache
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Utilities\obj\Debug\net7.0\Ecommerce.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Utilities\obj\Debug\net7.0\Ecommerce.Utilities.AssemblyInfoInputs.cache
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Utilities\obj\Debug\net7.0\Ecommerce.Utilities.AssemblyInfo.cs
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Utilities\obj\Debug\net7.0\Ecommerce.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Utilities\obj\Debug\net7.0\Ecommerce.Utilities.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Utilities\obj\Debug\net7.0\refint\Ecommerce.Utilities.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Utilities\obj\Debug\net7.0\Ecommerce.Utilities.pdb
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Utilities\obj\Debug\net7.0\ref\Ecommerce.Utilities.dll

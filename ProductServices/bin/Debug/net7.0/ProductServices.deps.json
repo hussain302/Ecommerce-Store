@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "ProductServices/1.0.0": {
         "dependencies": {
+          "Ecommerce.Utilities": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.5",
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.Design": "7.0.10",
@@ -673,6 +674,11 @@
             "fileVersion": "5.0.20.51904"
           }
         }
+      },
+      "Ecommerce.Utilities/1.0.0": {
+        "runtime": {
+          "Ecommerce.Utilities.dll": {}
+        }
       }
     }
   },
@@ -1199,6 +1205,11 @@
       "sha512": "sha512-c1ho9WU9ZxMZawML+ssPKZfdnrg/OjR3pe0m9v8230z3acqphwvPJqzAkH54xRYm5ntZHGG1EPP3sux9H3qSPg==",
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
+    },
+    "Ecommerce.Utilities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
