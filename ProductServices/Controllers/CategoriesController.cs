@@ -9,104 +9,90 @@ namespace ProductServices.Controllers
     [ApiController]
     public class CategoriesController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ApplicationDbContext _db;
 
-        public CategoriesController(ApplicationDbContext context)
+        public CategoriesController(ApplicationDbContext db)
         {
-            _context = context;
+            _db = db;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Category>>> GetCategories()
+        public async Task<IActionResult> Get()
         {
-          if (_context.Categories == null)
-          {
-              return NotFound();
-          }
-            return await _context.Categories.ToListAsync();
+            try
+            {
+                var categories = await _db.Categories.ToListAsync();
+                return Ok(categories);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Category>> GetCategory(int id)
+        public async Task<IActionResult> Get(int id)
         {
-          if (_context.Categories == null)
-          {
-              return NotFound();
-          }
-            var category = await _context.Categories.FindAsync(id);
-
-            if (category == null)
-            {
-                return NotFound();
-            }
-
-            return category;
-        }
-
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutCategory(int id, Category category)
-        {
-            if (id != category.CategoryId)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(category).State = EntityState.Modified;
-
             try
             {
-                await _context.SaveChangesAsync();
+                var category = await _db.Categories.FirstOrDefaultAsync(x => x.CategoryId == id);
+                if (category == null) return NotFound($"Category does not exists against category id: {id}");
+                return Ok(category);
             }
-            catch (DbUpdateConcurrencyException)
+            catch (Exception ex)
             {
-                if (!CategoryExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                return BadRequest(ex.Message);
             }
-
-            return NoContent();
-        }       
-
-        [HttpPost]
-        public async Task<ActionResult<Category>> PostCategory(Category category)
-        {
-          if (_context.Categories == null)
-          {
-              return Problem("Entity set 'ApplicationDbContext.Categories'  is null.");
-          }
-            _context.Categories.Add(category);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetCategory", new { id = category.CategoryId }, category);
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCategory(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            if (_context.Categories == null)
-            {
-                return NotFound();
-            }
-            var category = await _context.Categories.FindAsync(id);
-            if (category == null)
-            {
-                return NotFound();
-            }
-
-            _context.Categories.Remove(category);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            var find = await _db.Categories.FirstOrDefaultAsync(x => x.CategoryId == id);
+            if (find == null) return NotFound();
+            _db.Categories.Remove(find);
+            await _db.SaveChangesAsync();
+            return Ok($"{find.CategoryName} Deleted successfully");
         }
 
-        private bool CategoryExists(int id)
+        [HttpPost]
+        public async Task<IActionResult> Post([FromBody] Category category)
         {
-            return (_context.Categories?.Any(e => e.CategoryId == id)).GetValueOrDefault();
+            try
+            {
+                var find = await _db.Categories.FirstOrDefaultAsync(x => x.CategoryName == category.CategoryName);
+                if (find == null)
+                {
+                    await _db.Categories.AddAsync(category);
+                    await _db.SaveChangesAsync();
+                    return Ok($"{category.CategoryName} added successfully");
+                }
+                return BadRequest("Category name already exists");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> Put(int id, [FromBody] Category category)
+        {
+            try
+            {
+                var find = await _db.Categories.FirstOrDefaultAsync(x => x.CategoryId == id);
+                if (find == null) return BadRequest("Category does not exists");
+                find.CategoryName = category.CategoryName;
+                find.ModifiedBy = category.ModifiedBy;
+                find.ModifiedOn = category.ModifiedOn;
+                _db.Categories.Update(find);
+                await _db.SaveChangesAsync();
+                return Ok($"{category.CategoryName} updated successfully");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }
