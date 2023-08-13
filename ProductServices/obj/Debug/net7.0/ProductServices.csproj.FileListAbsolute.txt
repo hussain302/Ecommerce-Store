@@ -254,3 +254,9 @@ C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\Ecom
 C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\ProductServices\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\ProductServices\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\ProductServices\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\ProductServices\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\ProductServices\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\ProductServices\bin\Debug\net7.0\Ecommerce.MapperConfig.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\ProductServices\bin\Debug\net7.0\Ecommerce.Models.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\ProductServices\bin\Debug\net7.0\Ecommerce.MapperConfig.pdb
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\ProductServices\bin\Debug\net7.0\Ecommerce.Models.pdb

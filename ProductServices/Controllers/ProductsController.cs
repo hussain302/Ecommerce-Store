@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Ecommerce.Models.ResponseModels;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using ProductServices.Data;
+using ProductServices.Models.DTOs;
 using ProductServices.Models.Entities;
+using ProductServices.Repositories;
 
 namespace ProductServices.Controllers
 {
@@ -14,104 +11,180 @@ namespace ProductServices.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ILogger<ProductsController> _logger;
+        private readonly IMapper _mapper;
+        private readonly IProductRepository _productRepository;
 
-        public ProductsController(ApplicationDbContext context)
+        public ProductsController(IProductRepository productRepository, IMapper mapper, ILogger<ProductsController> logger)
         {
-            _context = context;
+            _logger = logger;
+            _mapper = mapper;
+            _productRepository = productRepository;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
+        public async Task<IActionResult> Get()
         {
-          if (_context.Products == null)
-          {
-              return NotFound();
-          }
-            return await _context.Products.ToListAsync();
+            try
+            {
+                var products = await _productRepository.GetProductsAsync();
+                var mappedProducts = _mapper.Map<IEnumerable<ProductDTO>>(products);
+                var response = new ApiResponse<IEnumerable<ProductDTO>>()
+                {
+                    IsSuccess = true,
+                    Data = mappedProducts,
+                    Message = "Products retrieved successfully."
+                };
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                var response = new ApiResponse<IEnumerable<ProductDTO>>()
+                {
+                    IsSuccess = false,
+                    Data = null,
+                    Message = ex.Message
+                };
+                _logger.LogError(ex, response.Message);
+                return Ok(response);
+            }
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Product>> GetProduct(int id)
+        public async Task<IActionResult> Get(int id)
         {
-          if (_context.Products == null)
-          {
-              return NotFound();
-          }
-            var product = await _context.Products.FindAsync(id);
-
-            if (product == null)
-            {
-                return NotFound();
-            }
-
-            return product;
-        }
-
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutProduct(int id, Product product)
-        {
-            if (id != product.ProductId)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(product).State = EntityState.Modified;
-
             try
             {
-                await _context.SaveChangesAsync();
+                var product = await _productRepository.GetProductAsync(id);
+                if (product == null)
+                {
+                    var response = new ApiResponse<ProductDTO>()
+                    {
+                        IsSuccess = false,
+                        Data = null,
+                        Message = $"Product does not exist for ID: {id}"
+                    };
+                    return Ok(response);
+                }
+
+                var mappedProduct = _mapper.Map<ProductDTO>(product);
+                var successResponse = new ApiResponse<ProductDTO>()
+                {
+                    IsSuccess = true,
+                    Data = mappedProduct,
+                    Message = "Product retrieved successfully."
+                };
+                return Ok(successResponse);
             }
-            catch (DbUpdateConcurrencyException)
+            catch (Exception ex)
             {
-                if (!ProductExists(id))
+                var response = new ApiResponse<ProductDTO>()
                 {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                    IsSuccess = false,
+                    Data = null,
+                    Message = ex.Message
+                };
+                _logger.LogError(ex, response.Message);
+                return Ok(response);
             }
-
-            return NoContent();
-        }
-
-        [HttpPost]
-        public async Task<ActionResult<Product>> PostProduct(Product product)
-        {
-          if (_context.Products == null)
-          {
-              return Problem("Entity set 'ApplicationDbContext.Products'  is null.");
-          }
-            _context.Products.Add(product);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetProduct", new { id = product.ProductId }, product);
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProduct(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            if (_context.Products == null)
+            try
             {
-                return NotFound();
+                var find = await _productRepository.GetProductAsync(id);
+                var success = await _productRepository.RemoveProductAsync(find);
+                var response = new ApiResponse<string>()
+                {
+                    IsSuccess = success,
+                    Data = null,
+                    Message = success ? $"Product with ID {id} deleted successfully" : $"Product with ID {id} not found"
+                };
+                return Ok(response);
             }
-            var product = await _context.Products.FindAsync(id);
-            if (product == null)
+            catch (Exception ex)
             {
-                return NotFound();
+                var response = new ApiResponse<string>()
+                {
+                    IsSuccess = false,
+                    Data = null,
+                    Message = ex.Message
+                };
+                _logger.LogError(ex, response.Message);
+                return Ok(response);
             }
-
-            _context.Products.Remove(product);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
         }
 
-        private bool ProductExists(int id)
+        [HttpPost]
+        public async Task<IActionResult> Post([FromBody] ProductDTO productDTO)
         {
-            return (_context.Products?.Any(e => e.ProductId == id)).GetValueOrDefault();
+            try
+            {
+                var product = _mapper.Map<Product>(productDTO);
+
+                var success = await _productRepository.AddProductAsync(product);
+                var response = new ApiResponse<string>()
+                {
+                    IsSuccess = success,
+                    Data = null,
+                    Message = success ? $"{productDTO.ProductName} added successfully" : "Failed to add product"
+                };
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                var response = new ApiResponse<string>()
+                {
+                    IsSuccess = false,
+                    Data = null,
+                    Message = ex.Message
+                };
+                _logger.LogError(ex, response.Message);
+                return Ok(response);
+            }
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> Put([FromBody] ProductDTO productDTO)
+        {
+            try
+            {
+                var existingProduct = await _productRepository.GetProductAsync(productDTO.ProductId);
+                if (existingProduct == null)
+                {
+                    var notFoundResponse = new ApiResponse<string>()
+                    {
+                        IsSuccess = false,
+                        Data = null,
+                        Message = "Product does not exist"
+                    };
+                    return Ok(notFoundResponse);
+                }
+
+                _mapper.Map(productDTO, existingProduct);
+
+                var success = await _productRepository.UpdateProductAsync(existingProduct);
+                var response = new ApiResponse<string>()
+                {
+                    IsSuccess = success,
+                    Data = null,
+                    Message = success ? $"{productDTO.ProductName} updated successfully" : "Failed to update product"
+                };
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                var response = new ApiResponse<string>()
+                {
+                    IsSuccess = false,
+                    Data = null,
+                    Message = ex.Message
+                };
+                _logger.LogError(ex, response.Message);
+                return Ok(response);
+            }
         }
     }
 }

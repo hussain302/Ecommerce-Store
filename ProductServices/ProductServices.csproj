@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.10">
@@ -23,7 +25,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Ecommerce.MapperConfig\Ecommerce.MapperConfig.csproj" />
+    <ProjectReference Include="..\Ecommerce.Models\Ecommerce.Models.csproj" />
     <ProjectReference Include="..\Ecommerce.Utilities\Ecommerce.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
   </ItemGroup>
 
 </Project>

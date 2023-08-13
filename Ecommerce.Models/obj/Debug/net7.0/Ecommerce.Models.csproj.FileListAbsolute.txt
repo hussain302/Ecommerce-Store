@@ -1,0 +1,12 @@
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Models\obj\Debug\net7.0\Ecommerce.Models.csproj.AssemblyReference.cache
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Models\obj\Debug\net7.0\Ecommerce.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Models\obj\Debug\net7.0\Ecommerce.Models.AssemblyInfoInputs.cache
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Models\obj\Debug\net7.0\Ecommerce.Models.AssemblyInfo.cs
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Models\obj\Debug\net7.0\Ecommerce.Models.csproj.CoreCompileInputs.cache
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Models\bin\Debug\net7.0\Ecommerce.Models.deps.json
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Models\bin\Debug\net7.0\Ecommerce.Models.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Models\bin\Debug\net7.0\Ecommerce.Models.pdb
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Models\obj\Debug\net7.0\Ecommerce.Models.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Models\obj\Debug\net7.0\refint\Ecommerce.Models.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Models\obj\Debug\net7.0\Ecommerce.Models.pdb
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.Models\obj\Debug\net7.0\ref\Ecommerce.Models.dll

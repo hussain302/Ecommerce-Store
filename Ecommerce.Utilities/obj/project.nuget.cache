@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "RAegboZyB52Cs6/o+NKyHmbV6nUIHMx12gbslSvwPCqSkzvJ2ld67TyjnTJheGDjczFbYtXxmXscyM/SqVqiig==",
+  "dgSpecHash": "AwufYR0ONwD/A1DYRNX8GM9puaM+5uCj30MtynRuZ7/LFKfea5HDrLaUPMMQ4Pk4dILbJxJELR6rtIxcQuW28Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Muhammad.Hussain\\Desktop\\Learning\\DotNetMastery\\.NET Microservices\\EcommerseStore Using .NET Microservices\\EcommerceStore\\Ecommerce.Utilities\\Ecommerce.Utilities.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Muhammad.Hussain\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Muhammad.Hussain\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

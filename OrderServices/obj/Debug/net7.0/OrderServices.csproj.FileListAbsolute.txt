@@ -31,3 +31,5 @@ C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\Ecom
 C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\OrderServices\obj\Debug\net7.0\OrderServices.pdb
 C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\OrderServices\obj\Debug\net7.0\OrderServices.genruntimeconfig.cache
 C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\OrderServices\obj\Debug\net7.0\ref\OrderServices.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\OrderServices\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\OrderServices\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

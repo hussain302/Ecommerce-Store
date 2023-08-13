@@ -29,3 +29,5 @@ C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\Ecom
 C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.WebUI\obj\Debug\net7.0\Ecommerce.WebUI.pdb
 C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.WebUI\obj\Debug\net7.0\Ecommerce.WebUI.genruntimeconfig.cache
 C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.WebUI\obj\Debug\net7.0\ref\Ecommerce.WebUI.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.WebUI\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.WebUI\obj\Debug\net7.0\Ecommerce.WebUI.csproj.CopyComplete

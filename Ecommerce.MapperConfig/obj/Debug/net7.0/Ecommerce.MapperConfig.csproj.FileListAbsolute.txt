@@ -1,0 +1,15 @@
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.MapperConfig\obj\Debug\net7.0\Ecommerce.MapperConfig.csproj.AssemblyReference.cache
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.MapperConfig\obj\Debug\net7.0\Ecommerce.MapperConfig.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.MapperConfig\obj\Debug\net7.0\Ecommerce.MapperConfig.AssemblyInfoInputs.cache
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.MapperConfig\obj\Debug\net7.0\Ecommerce.MapperConfig.AssemblyInfo.cs
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.MapperConfig\obj\Debug\net7.0\Ecommerce.MapperConfig.csproj.CoreCompileInputs.cache
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.MapperConfig\bin\Debug\net7.0\Ecommerce.MapperConfig.deps.json
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.MapperConfig\bin\Debug\net7.0\Ecommerce.MapperConfig.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.MapperConfig\bin\Debug\net7.0\Ecommerce.MapperConfig.pdb
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.MapperConfig\bin\Debug\net7.0\Ecommerce.Models.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.MapperConfig\bin\Debug\net7.0\Ecommerce.Models.pdb
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.MapperConfig\obj\Debug\net7.0\Ecommerce.MapperConfig.csproj.CopyComplete
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.MapperConfig\obj\Debug\net7.0\Ecommerce.MapperConfig.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.MapperConfig\obj\Debug\net7.0\refint\Ecommerce.MapperConfig.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.MapperConfig\obj\Debug\net7.0\Ecommerce.MapperConfig.pdb
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.MapperConfig\obj\Debug\net7.0\ref\Ecommerce.MapperConfig.dll

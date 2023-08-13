@@ -19,6 +19,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce.Utilities", "Ecom
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderServices", "OrderServices\OrderServices.csproj", "{A04E53BA-1AAA-4268-86B1-AC3D23116313}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce.Models", "Ecommerce.Models\Ecommerce.Models.csproj", "{55EE3ABB-6516-479B-89FE-7CE997622630}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce.MapperConfig", "Ecommerce.MapperConfig\Ecommerce.MapperConfig.csproj", "{F93F748E-BDCF-49E7-AB84-4EFBC675AAE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,14 @@ Global
 		{A04E53BA-1AAA-4268-86B1-AC3D23116313}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A04E53BA-1AAA-4268-86B1-AC3D23116313}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A04E53BA-1AAA-4268-86B1-AC3D23116313}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55EE3ABB-6516-479B-89FE-7CE997622630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55EE3ABB-6516-479B-89FE-7CE997622630}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55EE3ABB-6516-479B-89FE-7CE997622630}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55EE3ABB-6516-479B-89FE-7CE997622630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F93F748E-BDCF-49E7-AB84-4EFBC675AAE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F93F748E-BDCF-49E7-AB84-4EFBC675AAE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F93F748E-BDCF-49E7-AB84-4EFBC675AAE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F93F748E-BDCF-49E7-AB84-4EFBC675AAE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +62,8 @@ Global
 		{82AA798C-682C-4BF1-9607-2433544312E7} = {E52D11A4-0C16-4F5C-82C9-E5D1D2A97ACA}
 		{DC8AFF12-AEC4-4C5A-9163-113A5781262F} = {E132F2AC-C577-4310-9500-F1D8756398FC}
 		{A04E53BA-1AAA-4268-86B1-AC3D23116313} = {D42D2127-B8F6-4CFF-8C54-20DCBE681519}
+		{55EE3ABB-6516-479B-89FE-7CE997622630} = {E132F2AC-C577-4310-9500-F1D8756398FC}
+		{F93F748E-BDCF-49E7-AB84-4EFBC675AAE1} = {E132F2AC-C577-4310-9500-F1D8756398FC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {781B7426-4921-4233-BD49-4DB052A14909}

@@ -1,13 +1,22 @@
-using Microsoft.EntityFrameworkCore;
+using Ecommerce.MapperConfig;
 using ProductServices.Data;
+using ProductServices.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
+// Register Automapper Service
+builder.Services.AddSingleton(sp =>
+{
+    var mapperConfig = ProductMapperConfig.RegisterProductMaps();
+    return mapperConfig.CreateMapper();
+});
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 // Add services to the container.
-builder.Services.AddScoped<ApplicationDbContext>();
-builder.Services.AddControllers();
+builder.Services.AddTransient<ApplicationDbContext>();
+builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -21,9 +30,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
+app.MapGet("/", () => "Welcome to Products API project of Microservices");
 app.MapControllers();
-
 app.Run();

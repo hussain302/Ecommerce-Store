@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "/lGYoW8ot2MFybnx+nxW4/Gj120dSvjTqnK+7v8xgtOTl546q3ywthRkNPh//FB8M+lmzUVJc1UKH94ReSIR/A==",
+  "dgSpecHash": "4jiXDm5fmKM4pfU8wIA43MZdiYRQJxJV5JRg09Bo+MuFdkWvgsNJ5KT+wQzoLWkyvZgoBdcJoBKDIWXKyAOeVQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Muhammad.Hussain\\Desktop\\Learning\\DotNetMastery\\.NET Microservices\\EcommerseStore Using .NET Microservices\\EcommerceStore\\ProductServices\\ProductServices.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Muhammad.Hussain\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Muhammad.Hussain\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Muhammad.Hussain\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Muhammad.Hussain\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Muhammad.Hussain\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
@@ -72,7 +74,7 @@
     "C:\\Users\\Muhammad.Hussain\\.nuget\\packages\\microsoft.codeanalysis.razor\\6.0.11\\microsoft.codeanalysis.razor.6.0.11.nupkg.sha512",
     "C:\\Users\\Muhammad.Hussain\\.nuget\\packages\\microsoft.codeanalysis.scripting.common\\4.4.0\\microsoft.codeanalysis.scripting.common.4.4.0.nupkg.sha512",
     "C:\\Users\\Muhammad.Hussain\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\4.4.0\\microsoft.codeanalysis.workspaces.common.4.4.0.nupkg.sha512",
-    "C:\\Users\\Muhammad.Hussain\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Muhammad.Hussain\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Muhammad.Hussain\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.2\\microsoft.data.sqlclient.5.0.2.nupkg.sha512",
     "C:\\Users\\Muhammad.Hussain\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.0.1\\microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
     "C:\\Users\\Muhammad.Hussain\\.nuget\\packages\\microsoft.diasymreader\\1.4.0\\microsoft.diasymreader.1.4.0.nupkg.sha512",
