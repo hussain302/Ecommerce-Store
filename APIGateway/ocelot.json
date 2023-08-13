@@ -1,5 +1,6 @@
 {
   "Routes": [
+    //Category Services
     {
       "DownstreamPathTemplate": "/service/Categories",
       "DownstreamScheme": "https",

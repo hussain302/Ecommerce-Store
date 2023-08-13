@@ -19,15 +19,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce.Utilities", "Ecom
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderServices", "OrderServices\OrderServices.csproj", "{A04E53BA-1AAA-4268-86B1-AC3D23116313}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce.Models", "Ecommerce.Models\Ecommerce.Models.csproj", "{55EE3ABB-6516-479B-89FE-7CE997622630}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce.Models", "Ecommerce.Models\Ecommerce.Models.csproj", "{55EE3ABB-6516-479B-89FE-7CE997622630}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce.MapperConfig", "Ecommerce.MapperConfig\Ecommerce.MapperConfig.csproj", "{F93F748E-BDCF-49E7-AB84-4EFBC675AAE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce.MapperConfig", "Ecommerce.MapperConfig\Ecommerce.MapperConfig.csproj", "{F93F748E-BDCF-49E7-AB84-4EFBC675AAE1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AllTests", "AllTests", "{F7F8226E-5912-4C4D-BFB8-A875AD8BE381}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductServices.Tests", "ProductServices.Tests\ProductServices.Tests.csproj", "{2645D0F7-6CDE-49E0-BA8F-4CCF2BD205D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductServices.Tests", "ProductServices.Tests\ProductServices.Tests.csproj", "{2645D0F7-6CDE-49E0-BA8F-4CCF2BD205D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIGateway", "APIGateway\APIGateway.csproj", "{8A4C21B8-AE12-4DDB-B30E-8B23DBEAD7C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIGateway", "APIGateway\APIGateway.csproj", "{8A4C21B8-AE12-4DDB-B30E-8B23DBEAD7C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

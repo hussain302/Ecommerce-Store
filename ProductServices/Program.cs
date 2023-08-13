@@ -13,10 +13,19 @@ builder.Services.AddSingleton(sp =>
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 // Add services to the container.
-builder.Services.AddTransient<ApplicationDbContext>();
-builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
+
+
+//Local services
+builder.Services.AddScoped<ApplicationDbContext>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
+//Cache service
+builder.Services.AddMemoryCache();
 
 builder.Services.AddControllers();
+
+//swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -32,5 +41,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapGet("/", () => "Welcome to Products API project of Microservices");
+app.UseOutputCache();
+app.UseResponseCaching();
 app.MapControllers();
 app.Run();
