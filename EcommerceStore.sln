@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce.Models", "Ecommer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce.MapperConfig", "Ecommerce.MapperConfig\Ecommerce.MapperConfig.csproj", "{F93F748E-BDCF-49E7-AB84-4EFBC675AAE1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AllTests", "AllTests", "{F7F8226E-5912-4C4D-BFB8-A875AD8BE381}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductServices.Tests", "ProductServices.Tests\ProductServices.Tests.csproj", "{2645D0F7-6CDE-49E0-BA8F-4CCF2BD205D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +57,10 @@ Global
 		{F93F748E-BDCF-49E7-AB84-4EFBC675AAE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F93F748E-BDCF-49E7-AB84-4EFBC675AAE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F93F748E-BDCF-49E7-AB84-4EFBC675AAE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2645D0F7-6CDE-49E0-BA8F-4CCF2BD205D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2645D0F7-6CDE-49E0-BA8F-4CCF2BD205D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2645D0F7-6CDE-49E0-BA8F-4CCF2BD205D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2645D0F7-6CDE-49E0-BA8F-4CCF2BD205D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +72,7 @@ Global
 		{A04E53BA-1AAA-4268-86B1-AC3D23116313} = {D42D2127-B8F6-4CFF-8C54-20DCBE681519}
 		{55EE3ABB-6516-479B-89FE-7CE997622630} = {E132F2AC-C577-4310-9500-F1D8756398FC}
 		{F93F748E-BDCF-49E7-AB84-4EFBC675AAE1} = {E132F2AC-C577-4310-9500-F1D8756398FC}
+		{2645D0F7-6CDE-49E0-BA8F-4CCF2BD205D6} = {F7F8226E-5912-4C4D-BFB8-A875AD8BE381}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {781B7426-4921-4233-BD49-4DB052A14909}
