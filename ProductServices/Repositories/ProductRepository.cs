@@ -34,7 +34,7 @@ namespace ProductServices.Repositories
         {
             try
             {
-                var find = await _db.Products.Where(x => x.ProductId == product.ProductId).FirstOrDefaultAsync();
+                var find = await _db.Products.Where(x => x.ProductName == product.ProductName).FirstOrDefaultAsync();
                 if (find != null) throw new Exception($"Product already exists");
                 await _db.Products.AddAsync(product);
                 await _db.SaveChangesAsync();

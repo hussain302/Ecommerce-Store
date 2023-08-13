@@ -22,7 +22,8 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 //Cache service
 builder.Services.AddMemoryCache();
-
+builder.Services.AddOutputCache();
+builder.Services.AddResponseCaching();
 builder.Services.AddControllers();
 
 //swagger

@@ -16,7 +16,7 @@ namespace ProductServices.Models.DTOs
 
 
         [ForeignKey("CategoryId")]
-        public required int CategoryId { get; set; } //FK
-        public virtual required CategoryDTO Category { get; set; }
+        public int CategoryId { get; set; } //FK
+        public virtual CategoryDTO? Category { get; set; }
     }
 }

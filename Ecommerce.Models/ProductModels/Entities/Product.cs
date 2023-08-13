@@ -13,8 +13,8 @@ namespace ProductServices.Models.Entities
         public string ImageUrl { get; set; } = string.Empty;
 
         [ForeignKey("CategoryId")]
-        public required int CategoryId { get; set; } //FK
-        public virtual required Category Category { get; set; } 
+        public int CategoryId { get; set; } //FK
+        public virtual Category? Category { get; set; } 
 
     }
 }
