@@ -32,5 +32,4 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapGet("/", () => "Welcome to Products API project of Microservices");
-app.MapControllers();
 app.Run();
