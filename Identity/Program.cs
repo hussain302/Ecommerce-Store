@@ -1,49 +1,53 @@
-﻿using Identity;
-using Serilog;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
 
-Log.Logger = new LoggerConfiguration()
-    .WriteTo.Console()
-    .CreateBootstrapLogger();
+var builder = WebApplication.CreateBuilder(args);
 
-Log.Information("Starting up");
+// Add services to the container.
+builder.Services.AddControllersWithViews();
 
-try
+// Configure caching
+builder.Services.AddMemoryCache(); // Add any caching provider you prefer
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
 {
-    var builder = WebApplication.CreateBuilder(args);
+    app.UseDeveloperExceptionPage();
+}
+else
+{
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
+}
 
-    builder.Host.UseSerilog((ctx, lc) => lc
-        .WriteTo.Console(outputTemplate: "[{Timestamp:HH:mm:ss} {Level}] {SourceContext}{NewLine}{Message:lj}{NewLine}{Exception}{NewLine}")
-        .Enrich.FromLogContext()
-        .ReadFrom.Configuration(ctx.Configuration));
+app.UseHttpsRedirection();
+app.UseStaticFiles();
 
-    var app = builder
-        .ConfigureServices()
-        .ConfigurePipeline();
+app.UseRouting();
 
-    // this seeding is only for the template to bootstrap the DB and users.
-    // in production you will likely want a different approach.
-    if (args.Contains("/seed"))
+app.UseAuthorization();
+
+app.Use(async (context, next) =>
+{
+    // Custom error handling
+    try
     {
-        Log.Information("Seeding database...");
-        SeedData.EnsureSeedData(app);
-        Log.Information("Done seeding database. Exiting.");
-        return;
+        await next();
     }
+    catch (Exception ex)
+    {
+        // Log the error
+        Console.Error.WriteLine($"An error occurred: {ex}");
 
-    app.Run();
-}
-catch (Exception ex) when (
-                            // https://github.com/dotnet/runtime/issues/60600
-                            ex.GetType().Name is not "StopTheHostException"
-                            // HostAbortedException was added in .NET 7, but since we target .NET 6 we
-                            // need to do it this way until we target .NET 8
-                            && ex.GetType().Name is not "HostAbortedException"
-                        )
-{
-    Log.Fatal(ex, "Unhandled exception");
-}
-finally
-{
-    Log.Information("Shut down complete");
-    Log.CloseAndFlush();
-}
+        // Handle the error and display a user-friendly message
+        context.Response.Redirect("/Home/Error");
+    }
+});
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.Run();
