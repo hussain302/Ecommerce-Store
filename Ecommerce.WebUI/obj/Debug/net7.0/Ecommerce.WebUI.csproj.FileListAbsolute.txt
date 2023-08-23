@@ -21,7 +21,6 @@ C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\Ecom
 C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.WebUI\obj\Debug\net7.0\staticwebassets.pack.json
 C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.WebUI\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.WebUI\obj\Debug\net7.0\staticwebassets.development.json
-C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.WebUI\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.WebUI\obj\Debug\net7.0\scopedcss\bundle\Ecommerce.WebUI.styles.css
 C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.WebUI\obj\Debug\net7.0\scopedcss\projectbundle\Ecommerce.WebUI.bundle.scp.css
 C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.WebUI\obj\Debug\net7.0\Ecommerce.WebUI.dll
@@ -31,3 +30,6 @@ C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\Ecom
 C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.WebUI\obj\Debug\net7.0\ref\Ecommerce.WebUI.dll
 C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.WebUI\bin\Debug\net7.0\AutoMapper.dll
 C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.WebUI\obj\Debug\net7.0\Ecommerce.WebUI.csproj.CopyComplete
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.WebUI\bin\Debug\net7.0\Ecommerce.Models.dll
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.WebUI\bin\Debug\net7.0\Ecommerce.Models.pdb
+C:\Users\Muhammad.Hussain\Desktop\Learning\DotNetMastery\.NET Microservices\EcommerseStore Using .NET Microservices\EcommerceStore\Ecommerce.WebUI\obj\Debug\net7.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
