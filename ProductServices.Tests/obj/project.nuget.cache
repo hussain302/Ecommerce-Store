@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4kZToMeB7QNonlB5y+ja+TMw+IWovq83wFMm3FxpXBWIlP+0XAxu7Y8IWbCnnMVeAbeaW42i+pY9XknfViXmdA==",
+  "dgSpecHash": "HLN3bn06QBOmdkDcVYC4mVT7y+bPNEBf2K1L8T+BtuXvM+oTcnlM2MObJIQDM4bhEg3JxwXTPdTmQKKzo2XtUg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Muhammad.Hussain\\Desktop\\Learning\\DotNetMastery\\.NET Microservices\\EcommerseStore Using .NET Microservices\\EcommerceStore\\ProductServices.Tests\\ProductServices.Tests.csproj",
   "expectedPackageFiles": [

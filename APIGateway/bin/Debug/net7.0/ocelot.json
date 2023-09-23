@@ -1,76 +1,10 @@
 {
   "Routes": [
-    //Category Services
-    {
-      "DownstreamPathTemplate": "/service/Categories",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 5001
-        }
-      ],
-      "UpstreamPathTemplate": "/categories",
-      "UpstreamHttpMethod": [ "Get" ]
-    },
-    {
-      "DownstreamPathTemplate": "/service/Categories/{id}",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 5001
-        }
-      ],
-      "UpstreamPathTemplate": "/categories/{id}",
-      "UpstreamHttpMethod": [ "Get" ]
-    },
-    {
-      "DownstreamPathTemplate": "/service/Categories",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 5001
-        }
-      ],
-      "UpstreamPathTemplate": "/categories",
-      "UpstreamHttpMethod": [ "Post" ]
-    },
-    {
-      "DownstreamPathTemplate": "/service/Categories",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 5001
-        }
-      ],
-      "UpstreamPathTemplate": "/categories",
-      "UpstreamHttpMethod": [ "Put" ]
-    },
-    {
-      "DownstreamPathTemplate": "/service/Categories/{id}",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 5001
-        }
-      ],
-      "UpstreamPathTemplate": "/categories/{id}",
-      "UpstreamHttpMethod": [ "Delete" ]
-    },
     // Routes for Products
     {
-      "DownstreamPathTemplate": "/service/Products",
+      "DownstreamPathTemplate": "/service/v1/Catalog",
       "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 5001
-        }
-      ],
+      "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5001 } ],
       "UpstreamPathTemplate": "/products",
       "UpstreamHttpMethod": [ "Get" ]
     },

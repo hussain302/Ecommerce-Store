@@ -6,6 +6,6 @@ builder.Configuration.AddJsonFile("ocelot.json");
 builder.Services.AddOcelot();
 var app = builder.Build();
 
-await app.UseOcelot();
+//await app.UseOcelot();
 app.MapGet("/", () => "Welcome to API Gateway for all services of ecommerce");
 app.Run();
